@@ -19,13 +19,14 @@ class App extends Component {
   render() {
     return (
       <div>
-        <QrReader
+          <a href="https://wa.me/?text=Hello%20world!">Say hello</a>
+        {/* <QrReader
           delay={300}
           onError={this.handleError}
           onScan={this.handleScan}
           style={{ width: '100%' }}
         />
-        <p>{this.state.result}</p>
+        <p>{this.state.result}</p> */}
       </div>
     )
   }
