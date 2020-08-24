@@ -24,9 +24,15 @@ class App extends Component {
       password: "Password12345@"
      }
     const res = await axios.post('http://178.128.44.156:4040/api/auth/login', data)
+    const resData = await axios.get('http://178.128.44.156:4040/api/legal/about')
     if(res){
       alert('success')
       console.log(res.data)
+    }
+
+    if(resData){
+      alert('get success')
+      console.log(resData.data)
     }
   }
 
